@@ -8,7 +8,7 @@ function createNestedArr(jumlahRow, jumlahCol) {
     for (let i = 0; i < jumlahRow; i++) {
         result.push([]);
         for (var j = 0; j < jumlahCol; j++) {
-            randomIndex = Math.floor(Math.random() * 6);
+            randomIndex = Math.floor(Math.random() * 26);
             result[i].push(alphabet[randomIndex]);
         }
     }
