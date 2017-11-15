@@ -7,7 +7,7 @@ function createNestedArr(jumlahRow, jumlahCol) {
   for (let i = 0; i < jumlahRow; i++) {
     arr.push([])
     for (let j = 0; j < jumlahCol; j++) {
-      var randomStr = abjad[(Math.floor(Math.random() * abjad.length))]
+      var randomStr = abjad.charAt(Math.floor(Math.random() * abjad.length))
       arr[i].push(randomStr)
     }
   }
