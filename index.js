@@ -1,5 +1,5 @@
 var generateRandomNumber = (min, max) => {
-  var randomNum = Math.random()
+  let randomNum = Math.random()
   randomNum = randomNum * (max - min + 1)
   randomNum = Math.floor(randomNum)
   randomNum = randomNum + min
@@ -8,9 +8,9 @@ var generateRandomNumber = (min, max) => {
 
 var createNestedArr = (rowCount, colCount) => {
   const alpha = 'abcdefghijklmnopqrstuvwxyz'
-  var result = []
+  let result = []
   for (let i = 0; i < rowCount; i++) {
-    var row = []
+    let row = []
     for (let j = 0; j < colCount; j++) {
       row.push(alpha[generateRandomNumber(0, 24)])
     }
